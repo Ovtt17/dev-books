@@ -4,12 +4,12 @@ const books = defineCollection({
   schema: z.object({
     title: z.string(),
     author: z.string(),
-    image: z.string().url(),
+    image: z.string(),
     readtime: z.number(),
     description: z.string(),
     buy: z.object({
-      spain: z.string(),
-      usa: z.string()
+      spain: z.string().url(),
+      usa: z.string().url(),
     })
   })
 });
